@@ -1,0 +1,4 @@
+PROJECT(cpp00_ex01)
+ADD_EXECUTABLE( phonebook main.cpp phonebook.cpp phonebook.hpp)
+SET (CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -std=c++98")
+#SET (CMAKE_CXX_FLAGS "-std=c++98")
