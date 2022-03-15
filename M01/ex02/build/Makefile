@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gilee/project/cpp/M01/ex01
+CMAKE_SOURCE_DIR = /Users/gilee/project/cpp/M01/ex02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gilee/project/cpp/M01/ex01/build
+CMAKE_BINARY_DIR = /Users/gilee/project/cpp/M01/ex02/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M01/ex01/build/CMakeFiles /Users/gilee/project/cpp/M01/ex01/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M01/ex02/build/CMakeFiles /Users/gilee/project/cpp/M01/ex02/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M01/ex01/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M01/ex02/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,72 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named zombie
+# Target rules for targets named main
 
 # Build rule for target.
-zombie: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zombie
-.PHONY : zombie
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-zombie/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/build
-.PHONY : zombie/fast
-
-Zombie.o: Zombie.cpp.o
-.PHONY : Zombie.o
-
-# target to build an object file
-Zombie.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/Zombie.cpp.o
-.PHONY : Zombie.cpp.o
-
-Zombie.i: Zombie.cpp.i
-.PHONY : Zombie.i
-
-# target to preprocess a source file
-Zombie.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/Zombie.cpp.i
-.PHONY : Zombie.cpp.i
-
-Zombie.s: Zombie.cpp.s
-.PHONY : Zombie.s
-
-# target to generate assembly for a file
-Zombie.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/Zombie.cpp.s
-.PHONY : Zombie.cpp.s
-
-ZombieHorde.o: ZombieHorde.cpp.o
-.PHONY : ZombieHorde.o
-
-# target to build an object file
-ZombieHorde.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/ZombieHorde.cpp.o
-.PHONY : ZombieHorde.cpp.o
-
-ZombieHorde.i: ZombieHorde.cpp.i
-.PHONY : ZombieHorde.i
-
-# target to preprocess a source file
-ZombieHorde.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/ZombieHorde.cpp.i
-.PHONY : ZombieHorde.cpp.i
-
-ZombieHorde.s: ZombieHorde.cpp.s
-.PHONY : ZombieHorde.s
-
-# target to generate assembly for a file
-ZombieHorde.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/ZombieHorde.cpp.s
-.PHONY : ZombieHorde.cpp.s
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -190,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie.dir/build.make CMakeFiles/zombie.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -209,13 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... zombie"
-	@echo "... Zombie.o"
-	@echo "... Zombie.i"
-	@echo "... Zombie.s"
-	@echo "... ZombieHorde.o"
-	@echo "... ZombieHorde.i"
-	@echo "... ZombieHorde.s"
+	@echo "... main"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
