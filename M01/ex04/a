@@ -1,0 +1,8 @@
+total 24
+drwxr-xr-x  7 gilee  2020_seoul  238  3 16 16:28 .
+drwxr-xr-x  7 gilee  2020_seoul  238  3 15 18:47 ..
+-rw-r--r--  1 gilee  2020_seoul  262  3 16 16:08 CMakeLists.txt
+-rw-r--r--  1 gilee  2020_seoul    0  3 16 16:28 a
+drwxr-xr-x  4 gilee  2020_seoul  136  3 16 16:09 build
+-rwxr-xr-x  1 gilee  2020_seoul   91  3 15 18:48 build.sh
+-rw-r--r--  1 gilee  2020_seoul  304  3 16 16:27 main.cpp
