@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 PROJECT(cpp01_ex02)
 SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
-ADD_EXECUTABLE(main main.cpp Karen.cpp Karen.hpp)
+ADD_EXECUTABLE(main main.cpp Fixed.cpp Fixed.hpp)
 target_compile_options(main
 	PUBLIC
 		-g

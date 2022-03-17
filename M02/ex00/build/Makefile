@@ -57,10 +57,10 @@ RM = /Users/gilee/brew/Cellar/cmake/3.22.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gilee/project/cpp/M01/ex05
+CMAKE_SOURCE_DIR = /Users/gilee/project/cpp/M02/ex00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gilee/project/cpp/M01/ex05/build
+CMAKE_BINARY_DIR = /Users/gilee/project/cpp/M02/ex00/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M01/ex05/build/CMakeFiles /Users/gilee/project/cpp/M01/ex05/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M02/ex00/build/CMakeFiles /Users/gilee/project/cpp/M02/ex00/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M01/ex05/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M02/ex00/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Karen.o: Karen.cpp.o
-.PHONY : Karen.o
+Fixed.o: Fixed.cpp.o
+.PHONY : Fixed.o
 
 # target to build an object file
-Karen.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Karen.cpp.o
-.PHONY : Karen.cpp.o
+Fixed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Fixed.cpp.o
+.PHONY : Fixed.cpp.o
 
-Karen.i: Karen.cpp.i
-.PHONY : Karen.i
+Fixed.i: Fixed.cpp.i
+.PHONY : Fixed.i
 
 # target to preprocess a source file
-Karen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Karen.cpp.i
-.PHONY : Karen.cpp.i
+Fixed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Fixed.cpp.i
+.PHONY : Fixed.cpp.i
 
-Karen.s: Karen.cpp.s
-.PHONY : Karen.s
+Fixed.s: Fixed.cpp.s
+.PHONY : Fixed.s
 
 # target to generate assembly for a file
-Karen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Karen.cpp.s
-.PHONY : Karen.cpp.s
+Fixed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Fixed.cpp.s
+.PHONY : Fixed.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... Karen.o"
-	@echo "... Karen.i"
-	@echo "... Karen.s"
+	@echo "... Fixed.o"
+	@echo "... Fixed.i"
+	@echo "... Fixed.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
