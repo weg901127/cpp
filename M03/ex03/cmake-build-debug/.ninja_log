@@ -1,0 +1,6 @@
+# ninja log v5
+1	325	1647852258000000000	CMakeFiles/main.dir/main.cpp.o	25b512a65e06a060
+2	353	1647852258000000000	CMakeFiles/main.dir/ScavTrap.cpp.o	e925be27e4d00a9e
+1	356	1647852258000000000	CMakeFiles/main.dir/ClapTrap.cpp.o	2c0c9aa96a36cfb3
+356	400	1647852258000000000	main	c7c15589d363dc25
+2	351	1647852258000000000	CMakeFiles/main.dir/FragTrap.cpp.o	3d20098748cabe6b
