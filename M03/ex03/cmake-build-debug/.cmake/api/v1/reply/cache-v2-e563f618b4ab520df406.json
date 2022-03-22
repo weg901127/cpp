@@ -103,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/8A0F1810-8E15-47AB-9B69-3C469A56B9BB/d/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/4AEB9FE6-73DA-4779-997F-93B278D21AED/d/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/8A0F1810-8E15-47AB-9B69-3C469A56B9BB/d/CLion.app/Contents/bin/cmake/mac/bin/cpack"
+			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/4AEB9FE6-73DA-4779-997F-93B278D21AED/d/CLion.app/Contents/bin/cmake/mac/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/8A0F1810-8E15-47AB-9B69-3C469A56B9BB/d/CLion.app/Contents/bin/cmake/mac/bin/ctest"
+			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/4AEB9FE6-73DA-4779-997F-93B278D21AED/d/CLion.app/Contents/bin/cmake/mac/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/8A0F1810-8E15-47AB-9B69-3C469A56B9BB/d/CLion.app/Contents/bin/ninja/mac/ninja"
+			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/4AEB9FE6-73DA-4779-997F-93B278D21AED/d/CLion.app/Contents/bin/ninja/mac/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -839,7 +839,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/8A0F1810-8E15-47AB-9B69-3C469A56B9BB/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21"
+			"value" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/4AEB9FE6-73DA-4779-997F-93B278D21AED/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1076,42 +1076,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
-		},
-		{
-			"name" : "cpp01_ex02_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/gilee/project/cpp/M03/ex03/cmake-build-debug"
-		},
-		{
-			"name" : "cpp01_ex02_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "cpp01_ex02_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/gilee/project/cpp/M03/ex03"
 		},
 		{
 			"name" : "cpp03_ex03_BINARY_DIR",

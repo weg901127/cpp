@@ -4,7 +4,7 @@ int	main(void)
 {
 	PhoneBook	*pb = new PhoneBook();
 	std::string	input;
-	while (1)
+	while (!std::cin.eof())
 	{
 		std::cout << "PHONE BOOK \n1. ADD\n2. SEARCH\n3. EXIT\n";
 		getline(std::cin, input);

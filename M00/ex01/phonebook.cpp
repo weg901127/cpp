@@ -28,12 +28,19 @@ static void	put_header()
 	std::cout << std::setw(10) << "NICKNAME" << "|" << std::endl;
 }
 
+PhoneBook::PhoneBook() {
+    std::fill_n(firstname, MAX, "");
+    std::fill_n(lastname, MAX, "");
+    std::fill_n(nickname, MAX, "");
+    std::fill_n(phonenumber, MAX, "");
+    std::fill_n(secret, MAX, "");
+}
 void	PhoneBook::search()
 {
 	int	index;
 
 	put_header();
-	for (int i = 0 ; !firstname[i].empty() ; i++)
+	for (int i = 0 ; i < MAX && !firstname[i].empty(); i++)
 	{
 		std::cout << "|" << std::setw(10) << i << "|";
 		put_str(firstname[i]);
@@ -47,7 +54,7 @@ void	PhoneBook::search()
 		std::cin >> index;
 		if (index == -1)
 			return ;
-		else if (index > 7)
+		else if (index > 7 || index < -1)
 		{
 			std::cout << "out of index" << std::endl;
 			break;

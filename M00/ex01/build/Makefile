@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named phonebook
+# Target rules for targets named main
 
 # Build rule for target.
-phonebook: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 phonebook
-.PHONY : phonebook
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-phonebook/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/build
-.PHONY : phonebook/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+PhoneBook.o: PhoneBook.cpp.o
+.PHONY : PhoneBook.o
+
+# target to build an object file
+PhoneBook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PhoneBook.cpp.o
+.PHONY : PhoneBook.cpp.o
+
+PhoneBook.i: PhoneBook.cpp.i
+.PHONY : PhoneBook.i
+
+# target to preprocess a source file
+PhoneBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PhoneBook.cpp.i
+.PHONY : PhoneBook.cpp.i
+
+PhoneBook.s: PhoneBook.cpp.s
+.PHONY : PhoneBook.s
+
+# target to generate assembly for a file
+PhoneBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PhoneBook.cpp.s
+.PHONY : PhoneBook.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,32 +174,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-phonebook.o: phonebook.cpp.o
-.PHONY : phonebook.o
-
-# target to build an object file
-phonebook.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/phonebook.cpp.o
-.PHONY : phonebook.cpp.o
-
-phonebook.i: phonebook.cpp.i
-.PHONY : phonebook.i
-
-# target to preprocess a source file
-phonebook.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/phonebook.cpp.i
-.PHONY : phonebook.cpp.i
-
-phonebook.s: phonebook.cpp.s
-.PHONY : phonebook.s
-
-# target to generate assembly for a file
-phonebook.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phonebook.dir/build.make CMakeFiles/phonebook.dir/phonebook.cpp.s
-.PHONY : phonebook.cpp.s
 
 # Help Target
 help:
@@ -185,13 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... phonebook"
+	@echo "... main"
+	@echo "... PhoneBook.o"
+	@echo "... PhoneBook.i"
+	@echo "... PhoneBook.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... phonebook.o"
-	@echo "... phonebook.i"
-	@echo "... phonebook.s"
 .PHONY : help
 
 

@@ -1,5 +1,10 @@
-PROJECT(cpp00_ex01)
-ADD_EXECUTABLE( phonebook main.cpp phonebook.cpp phonebook.hpp)
-SET (CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -std=c++98")
+cmake_minimum_required(VERSION 3.19)
+PROJECT(cpp01_ex02)
 SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
-#SET (CMAKE_CXX_FLAGS "-std=c++98")
+ADD_EXECUTABLE(main main.cpp PhoneBook.cpp PhoneBook.hpp)
+target_compile_options(main
+	PUBLIC
+		-g
+		-std=c++98
+		-Wall -Werror -Wextra
+		)
