@@ -10,3 +10,4 @@ int main( void ){
 	std::cout << "PTR : " << stringPTR << std::endl;
 	std::cout << "REF : " << stringREF << std::endl;
 }
+//TODO 평가준비~

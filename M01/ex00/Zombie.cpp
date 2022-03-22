@@ -1,6 +1,6 @@
 #include "Zombie.hpp"
 
-Zombie::Zombie( std::string name ){
+Zombie::Zombie( std::string const& name ){
 	this->name = name;
 }
 
