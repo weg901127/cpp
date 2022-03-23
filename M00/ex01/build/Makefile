@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Contact.o: Contact.cpp.o
+.PHONY : Contact.o
+
+# target to build an object file
+Contact.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Contact.cpp.o
+.PHONY : Contact.cpp.o
+
+Contact.i: Contact.cpp.i
+.PHONY : Contact.i
+
+# target to preprocess a source file
+Contact.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Contact.cpp.i
+.PHONY : Contact.cpp.i
+
+Contact.s: Contact.cpp.s
+.PHONY : Contact.s
+
+# target to generate assembly for a file
+Contact.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Contact.cpp.s
+.PHONY : Contact.cpp.s
+
 PhoneBook.o: PhoneBook.cpp.o
 .PHONY : PhoneBook.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... Contact.o"
+	@echo "... Contact.i"
+	@echo "... Contact.s"
 	@echo "... PhoneBook.o"
 	@echo "... PhoneBook.i"
 	@echo "... PhoneBook.s"

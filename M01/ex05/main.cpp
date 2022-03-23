@@ -1,13 +1,12 @@
-#include "Karen.hpp"
+#include "Harl.hpp"
 
 int main( void )
 {
-	Karen a = Karen();
+	Harl a = Harl();
 
-	a.complain("debug");
-	a.complain("info");
-	a.complain("warning");
-	a.complain("error");
-	std::cout << "input_null" << std::endl;
+	a.complain("DEBUG");
+	a.complain("INFO");
+	a.complain("WARNING");
+	a.complain("ERROR");
 	a.complain("");
 }

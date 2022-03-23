@@ -1,8 +1,8 @@
-#include "Karen.hpp"
+#include "Harl.hpp"
 
 int main(int argc, char **argv)
 {
-	Karen a = Karen();
+	Harl a = Harl();
 
 	if (argc == 2)
 		a.complain(argv[1]);

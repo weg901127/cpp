@@ -7,7 +7,7 @@ class HumanB{
 		Weapon		*wtype;
 		std::string	name;
 	public:
-		HumanB( std::string name );
+		explicit HumanB( std::string const& name );
 		void		attack( void );
 		void		setWeapon( Weapon &wtype );
 };

@@ -7,7 +7,7 @@ class HumanA{
 		Weapon		&wtype;
 		std::string	name;
 	public:
-		HumanA(std::string name, Weapon &wtype) : wtype(wtype), name(name){};
+		HumanA(std::string const &name, Weapon &wtype);
 		void		attack( void );
 };
 #endif // HUMANA_HPP

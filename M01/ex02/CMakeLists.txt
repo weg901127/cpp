@@ -7,4 +7,3 @@ target_compile_options(main
 		-std=c++98
 		-Wall -Werror -Wextra
 		)
-#SET (CMAKE_CXX_FLAGS "-std=c++98")

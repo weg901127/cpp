@@ -3,8 +3,8 @@
 Zombie::Zombie( void ){
 }
 
-Zombie::Zombie( std::string name ){
-	this->name = name;
+Zombie::Zombie( std::string const& name ){
+    setName(name);
 }
 
 Zombie::~Zombie( void ){

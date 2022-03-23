@@ -3,16 +3,16 @@
 
 # include <iostream>
 
-class Karen{
+class Harl{
 	private:
 		std::string	lv_idx[4];
-		void	(Karen::*f[4])(void);
+		void	(Harl::*f[4])(void);
 		void	debug( void );
 		void	info( void );
 		void	warning( void );
 		void	error( void );
 	public:
-		Karen();
+		Harl();
 		void	complain( std::string level );
 };
 
