@@ -1,0 +1,1 @@
+/usr/bin/clang++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/zombie.dir/main.cpp.o CMakeFiles/zombie.dir/Zombie.cpp.o CMakeFiles/zombie.dir/newZombie.cpp.o CMakeFiles/zombie.dir/randomChump.cpp.o -o zombie 

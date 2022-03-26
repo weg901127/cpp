@@ -22,5 +22,5 @@ bool		bsp(Point a, Point b, Point c, Point t)
 	return hit & 1;
 err:
 	std::cerr << "It's not triangle" << std::endl;
-	exit(1);
+	return 0;
 }

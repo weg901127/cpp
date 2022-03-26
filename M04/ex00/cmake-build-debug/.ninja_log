@@ -1,0 +1,9 @@
+# ninja log v5
+1	332	1648202344000000000	CMakeFiles/main.dir/main.cpp.o	dff6b99e5a1bacca
+2	340	1648201370000000000	CMakeFiles/main.dir/Animal.cpp.o	79819e663fb500b8
+332	378	1648202344000000000	main	c4408805eee33553
+2	367	1648202236000000000	CMakeFiles/main.dir/WrongAnimal.cpp.o	6828eea7676951e5
+1	333	1648201502000000000	CMakeFiles/main.dir/Dog.cpp.o	7d09312fc9e2d891
+2	332	1648201497000000000	CMakeFiles/main.dir/Cat.cpp.o	ab4b72be7aedcdf0
+2	368	1648202236000000000	CMakeFiles/main.dir/WrongCat.cpp.o	3e335179ce17bfe6
+2	368	1648202236000000000	CMakeFiles/main.dir/WrongDog.cpp.o	b3b608b37168f99d

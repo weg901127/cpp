@@ -8,7 +8,7 @@ ScavTrap::~ScavTrap() {
     std::cout << name + " SCCCCCCCCCA.... _" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string const& name) : name(name), hitpoints(100), energypoints(50), attackdamage(20){
+ScavTrap::ScavTrap(std::string const& name) : ClapTrap(name), name(name), hitpoints(100), energypoints(50), attackdamage(20){
     std::cout << name + " SCCCCCCCCCAAV" << std::endl;
 }
 
@@ -30,4 +30,20 @@ ScavTrap &ScavTrap::operator=(ScavTrap const& src) {
     this->energypoints = src.energypoints;
     this->attackdamage = src.attackdamage;
     return *this;
+}
+
+int ScavTrap::getHitpoints() const {
+    return hitpoints;
+}
+
+int ScavTrap::getEnergypoints() const {
+    return energypoints;
+}
+
+int ScavTrap::getAttackdamage() const {
+    return attackdamage;
+}
+
+std::string ScavTrap::getName() const {
+    return name;
 }

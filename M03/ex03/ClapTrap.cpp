@@ -45,3 +45,7 @@ void		ClapTrap::takeDamage(unsigned int amount) {
 void		ClapTrap::beRepaired(unsigned int amount) {
 	std::cout << "Yeahhhhh +" << amount << std::endl;
 }
+
+std::string ClapTrap::getName() {
+    return name;
+}

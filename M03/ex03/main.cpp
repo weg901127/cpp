@@ -1,10 +1,8 @@
-#include "FragTrap.h"
+#include "DiamondTrap.hpp"
 
 int main( ) {
-    FragTrap    aa;
-    FragTrap    sadf(FragTrap("kk"));
-    sadf.highFivesGuys();
-    sadf.attack("z");
-    sadf.beRepaired(100);
+    DiamondTrap    aa("FUCKKKKK");
+    aa.attack("jekim");
+    aa.whoAmI();
     return 0;
 }

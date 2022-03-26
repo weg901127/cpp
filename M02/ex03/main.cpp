@@ -2,10 +2,10 @@
 
 
 int main( void ) {
-	Point	a_(2, 4);
-	Point	b_(4, 2);
-	Point	c_(4, 4);
-	Point	t_(3, 3.5);
+	Point	a_(1, 1);
+	Point	b_(3, 1);
+	Point	c_(1, 3);
+	Point	t_(2.124214f, 2.9345834812f);
 	std::cout << bsp(a_, b_, c_, t_) << std::endl;
 	Point	a(2, 2);
 	Point	b(2, 2);

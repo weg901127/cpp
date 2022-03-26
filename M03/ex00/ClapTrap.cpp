@@ -1,6 +1,4 @@
 #include "ClapTrap.hpp"
-#include <iostream>
-#include <ostream>
 
 ClapTrap::ClapTrap() : hitpoints(10), energypoints(10), attackdamage(0) {
 	std::cout << "boooooOooooyahhh" << std::endl;
@@ -10,7 +8,7 @@ ClapTrap::ClapTrap() : hitpoints(10), energypoints(10), attackdamage(0) {
 	std::cout << "attack damage : " << this->attackdamage << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name) : hitpoints(10), energypoints(10), attackdamage(0) {
+ClapTrap::ClapTrap(std::string const& name) : hitpoints(10), energypoints(10), attackdamage(0) {
 	std::cout << name + ": boooooOooooyahhh" << std::endl;
 	this->name = name;
 	std::cout << "name : " + this->name << std::endl;
@@ -27,7 +25,7 @@ ClapTrap::ClapTrap(ClapTrap& src) {
 	*this = src;
 }
 
-ClapTrap& ClapTrap::operator=(ClapTrap &src) {
+ClapTrap& ClapTrap::operator=(ClapTrap const& src) {
 	this->attackdamage = src.attackdamage;
 	this->energypoints = src.energypoints;
 	this->hitpoints = src.hitpoints;
@@ -36,7 +34,7 @@ ClapTrap& ClapTrap::operator=(ClapTrap &src) {
 }
 
 void		ClapTrap::attack(std::string const& target) {
-	std::cout << "ClapTrap <" + this->name + "> attack <" + target + ">, causing <" << this->attackdamage
+	std::cout << "ClapTrap <" + name + "> attack <" + target + ">, causing <" << this->attackdamage
 		<< "> points of damage !" << std::endl;
 }
 
@@ -46,4 +44,8 @@ void		ClapTrap::takeDamage(unsigned int amount) {
 
 void		ClapTrap::beRepaired(unsigned int amount) {
 	std::cout << "Yeahhhhh +" << amount << std::endl;
+}
+
+std::string ClapTrap::getName() {
+    return name;
 }

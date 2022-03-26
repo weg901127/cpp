@@ -2,7 +2,7 @@
 # define SCAVTRAP_HPP
 # include "ClapTrap.hpp"
 
-class	ScavTrap : public ClapTrap {
+class	ScavTrap : virtual public ClapTrap {
 private:
     std::string	name;
     int			hitpoints;
@@ -16,5 +16,10 @@ public:
     ScavTrap& operator=(ScavTrap const& src);
     void		attack(std::string const& target);
     void		guardGate();
+    std::string getName() const;
+    int getHitpoints() const;
+    int getEnergypoints() const;
+    int getAttackdamage() const;
+
 };
 #endif

@@ -34,7 +34,7 @@ ClapTrap& ClapTrap::operator=(ClapTrap const& src) {
 }
 
 void		ClapTrap::attack(std::string const& target) {
-	std::cout << "ClapTrap <" + this->name + "> attack <" + target + ">, causing <" << this->attackdamage
+	std::cout << "ClapTrap <" + name + "> attack <" + target + ">, causing <" << this->attackdamage
 		<< "> points of damage !" << std::endl;
 }
 
@@ -44,4 +44,8 @@ void		ClapTrap::takeDamage(unsigned int amount) {
 
 void		ClapTrap::beRepaired(unsigned int amount) {
 	std::cout << "Yeahhhhh +" << amount << std::endl;
+}
+
+std::string ClapTrap::getName() {
+    return name;
 }

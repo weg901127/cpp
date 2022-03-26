@@ -44,5 +44,16 @@ int main( void ) {
 	std::cout << "----------MIN, MAX TEST----------" << std::endl;
 	std::cout << "PROC  :   max(a, b) -->    |" << Fixed::max( a, b ) << std::endl;
 	std::cout << "PROC  :   min(a, b) -->    |" << Fixed::min( a, b ) << std::endl;
+    std::cout << "------------------------------------------------------" << std::endl;
+    Fixed x;
+    Fixed const y( Fixed( 5.05f ) * Fixed( 2 ) );
+    std::cout << x << std::endl;
+    std::cout << ++x << std::endl;
+    std::cout << x << std::endl;
+    std::cout << x++ << std::endl;
+    std::cout << x << std::endl;
+    std::cout << y << std::endl;
+    std::cout << Fixed::max( x, y ) << std::endl;
+    return 0;
 	return 0;
 }

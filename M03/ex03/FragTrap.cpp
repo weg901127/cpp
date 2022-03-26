@@ -2,7 +2,7 @@
 // Created by Giyoung Lee on 3/21/22.
 //
 
-#include "FragTrap.h"
+#include "FragTrap.hpp"
 
 FragTrap::FragTrap(const std::string &name) : ClapTrap(name),name(name), hitpoints(100), energypoints(100), attackdamage(30) {
     std::cout << name + " : FRRRRRRRRRRAAAAAAAGGGGGGGGGG!!!!!!" << std::endl;
@@ -31,3 +31,18 @@ void FragTrap::highFivesGuys() {
     std::cout << "positive high fives request" << std::endl;
 }
 
+int FragTrap::getHitpoints() const {
+    return hitpoints;
+}
+
+int FragTrap::getEnergypoints() const {
+    return energypoints;
+}
+
+int FragTrap::getAttackdamage() const {
+    return attackdamage;
+}
+
+std::string FragTrap::getName() const {
+    return name;
+}

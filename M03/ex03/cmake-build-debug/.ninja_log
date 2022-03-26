@@ -1,6 +1,9 @@
 # ninja log v5
-1	325	1647852258000000000	CMakeFiles/main.dir/main.cpp.o	25b512a65e06a060
-2	353	1647852258000000000	CMakeFiles/main.dir/ScavTrap.cpp.o	e925be27e4d00a9e
-1	356	1647852258000000000	CMakeFiles/main.dir/ClapTrap.cpp.o	2c0c9aa96a36cfb3
-356	400	1647852258000000000	main	c7c15589d363dc25
-2	351	1647852258000000000	CMakeFiles/main.dir/FragTrap.cpp.o	3d20098748cabe6b
+1	498	1648198192000000000	CMakeFiles/main.dir/Users/gilee/project/cpp/M04/ex00/main.cpp.o	508bda516628eefe
+0	564	1648198192000000000	CMakeFiles/main.dir/ClapTrap.cpp.o	5449100e566a585f
+0	566	1648198192000000000	CMakeFiles/main.dir/ScavTrap.cpp.o	2ec93051fdc54a01
+1	574	1648198192000000000	CMakeFiles/main.dir/Users/gilee/project/cpp/M04/ex00/Cat.cpp.o	1594351a79264321
+1	583	1648198192000000000	CMakeFiles/main.dir/Users/gilee/project/cpp/M04/ex00/Dog.cpp.o	c44f2d5bf657059c
+0	593	1648198192000000000	CMakeFiles/main.dir/FragTrap.cpp.o	6c5bfd7acbc728d
+1	599	1648198192000000000	CMakeFiles/main.dir/DiamondTrap.cpp.o	86b66d9aad3d03d6
+0	623	1648198192000000000	CMakeFiles/main.dir/main.cpp.o	9145c6345e14b90d

@@ -2,9 +2,8 @@
 #include <cmath>
 #include <iostream>
 
-Fixed::Fixed(){
+Fixed::Fixed():fvalue(0){
 	std::cout << "Default constructor called" << std::endl;
-	this->fvalue = 0;
 }
 Fixed::~Fixed(){
 	std::cout << "Destructor called" << std::endl;
