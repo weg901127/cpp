@@ -23,12 +23,15 @@ int main() {
             std::cout << "[" << i + 1 << "] " + arr[i]->getType() << std::endl;
         }
 
-        std::cout << "------------------------Brain Copy Test" << std::endl;
+        std::cout << "========================================Brain Copy Test" << std::endl;
         for (int i = 0; i < LEN; i++) {
             if (i < LEN/2)
-                *arr[i] = static_cast<Cat>(a);
+                *arr[i] = a;
             else
-                *arr[i] = static_cast<Dog>(b);
+                *arr[i] = b;
+        }
+        for (int i = 0; i < LEN; i++) {
+            arr[i]->makeSound();
         }
         for (int i = 0; i < LEN; i++) {
             delete arr[i];

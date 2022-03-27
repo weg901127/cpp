@@ -7,10 +7,12 @@
 
 
 #include <iostream>
+#include "Brain.hpp"
 
 class Animal {
 protected:
     std::string type;
+    Brain   *AnimalBrain;
 public:
     Animal();
     virtual ~Animal();
