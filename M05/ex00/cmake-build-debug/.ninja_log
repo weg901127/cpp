@@ -1,0 +1,8 @@
+# ninja log v5
+2	331	1648471810000000000	CMakeFiles/main.dir/Bureaucrat.cpp.o	ab7f471bf721f3b9
+2	77	1648471810000000000	CMakeFiles/main.dir/GradeTooHighException.cpp.o	6b00f18dff5c654b
+1	353	1648471022000000000	CMakeFiles/main.dir/main.cpp.o	ddd6b2450f4b9c34
+332	386	1648471810000000000	main	127b1acd0f07c44e
+2	77	1648471810000000000	CMakeFiles/main.dir/GradeTooLowException.cpp.o	cb4f4ca3070a1f57
+1	322	1648472307000000000	CMakeFiles/main.dir/ExceptionPrinter.cpp.o	bf0c92a2cc4624a9
+322	367	1648472307000000000	main	a81f362cf80515a4

@@ -34,7 +34,7 @@ int main(){
     me->use(2, *bob);
     me->use(3, *bob);
     me->use(4, *bob);
-    delete bob;
+    //delete bob;
     delete me;
     delete src;
     return 0;
