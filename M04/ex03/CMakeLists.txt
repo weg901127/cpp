@@ -6,5 +6,5 @@ target_compile_options(main
         PUBLIC
         -g
         -std=c++98
-        #-Wall -Werror -Wextra
+        -Wall -Werror -Wextra
         )

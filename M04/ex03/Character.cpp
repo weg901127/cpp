@@ -6,7 +6,7 @@
 #include "AMateria.hpp"
 Character::Character() {}
 
-Character::Character(std::string const& name) : name(name), cur(0){
+Character::Character(std::string const& name) : name(name){
     for (int i = 0; i < 4; i++) {
         inventory[i] = NULL;
     }

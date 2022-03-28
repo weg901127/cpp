@@ -35,5 +35,6 @@ MateriaSource::MateriaSource(MateriaSource &src) {
 }
 
 MateriaSource &MateriaSource::operator=(MateriaSource &src) {
+    (void)src;
     return  *this;
 }

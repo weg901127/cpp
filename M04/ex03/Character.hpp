@@ -11,7 +11,6 @@ class Character : public ICharacter{
 private:
     std::string const name;
     AMateria*   inventory[MAX_IVT];
-    int         cur;
 public:
     Character();
     ~Character();

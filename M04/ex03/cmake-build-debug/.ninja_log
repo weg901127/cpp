@@ -1,8 +1,0 @@
-# ninja log v5
-1	336	1648439015000000000	CMakeFiles/main.dir/Ice.cpp.o	97cb39ebe800df8b
-2	311	1648447890000000000	CMakeFiles/main.dir/AMateria.cpp.o	cb99af5e16c04336
-2	311	1648448539000000000	CMakeFiles/main.dir/Character.cpp.o	9681a98b355a1b2c
-311	355	1648448539000000000	main	4e2ef5558e15d231
-1	327	1648448435000000000	CMakeFiles/main.dir/Cure.cpp.o	c5a22ebb45c25ef
-1	311	1648448483000000000	CMakeFiles/main.dir/main.cpp.o	aa6b0dbd0963ac84
-1	343	1648448414000000000	CMakeFiles/main.dir/MateriaSource.cpp.o	fd0618e49766d2c7
