@@ -9,8 +9,8 @@
 #define SLOT_MAX 4
 class MateriaSource : public IMateriaSource{
 private:
-    int         cur;
     AMateria*   slot[SLOT_MAX];
+    int         cur;
 public:
     MateriaSource();
     ~MateriaSource();

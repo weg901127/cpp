@@ -6,8 +6,16 @@
 #define CPP04_EX03_CURE_HPP
 
 
-class Cure {
+#include "AMateria.hpp"
 
+class Cure : public AMateria{
+public:
+    Cure();
+    ~Cure();
+    Cure(Cure const& src);
+    Cure&    operator=(Cure const& src);
+    Cure*    clone() const;
+    void    use(ICharacter &target);
 };
 
 

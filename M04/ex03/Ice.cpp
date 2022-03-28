@@ -3,6 +3,8 @@
 //
 
 #include "Ice.hpp"
+#include "Character.hpp"
+//#include <iostream>
 
 Ice::Ice() {
     type = "ice";
@@ -26,5 +28,5 @@ Ice::Ice(const Ice &src) {
 }
 
 void Ice::use(ICharacter &target) {
-    (void)target;
+    std::cout << "* shoots an ice bolt at " + target.getName() + " *"<< std::endl;
 }

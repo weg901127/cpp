@@ -14,8 +14,10 @@ MateriaSource::~MateriaSource() {
 }
 
 void MateriaSource::learnMateria(AMateria *materia) {
-    if (cur == SLOT_MAX)
+    if (cur == SLOT_MAX) {
         std::cout << "FULL SLOT" << std::endl;
+        delete materia;
+    }
     else
         slot[cur++] = materia;
 }

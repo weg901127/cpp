@@ -6,6 +6,7 @@
 #define CPP04_EX03_ICHARACTER_HPP
 
 #include <iostream>
+#define MAX_IVT 4
 class AMateria;
 
 class ICharacter {
