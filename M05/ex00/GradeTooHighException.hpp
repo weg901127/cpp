@@ -6,10 +6,12 @@
 #define CPP05_EX00_GRADETOOHIGHEXCEPTION_HPP
 
 #include <exception>
-#include "ExceptionPrinter.hpp"
-class GradeTooHighException : public std::exception, public ExceptionPrinter{
+#include "AExceptionPrinter.hpp"
+class GradeTooHighException : public std::exception, public AExceptionPrinter{
+private:
+	void empty(){};
 public:
-	const char *what() const _NOEXCEPT;
+	const char *what() const throw();
 };
 
 #endif //CPP05_EX00_GRADETOOHIGHEXCEPTION_HPP

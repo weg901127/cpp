@@ -11,5 +11,8 @@ int main(){
 	for (int i = 0; i < 100; ++i) {
 		b.decrease();
 	}
+	for (int i = 0; i < 100; ++i) {
+		a.increase();
+	}
 	return 0;
 }

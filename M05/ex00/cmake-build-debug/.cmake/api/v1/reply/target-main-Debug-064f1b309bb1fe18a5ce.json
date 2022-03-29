@@ -167,12 +167,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ExceptionPrinter.cpp",
+			"path" : "AExceptionPrinter.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "ExceptionPrinter.hpp",
+			"path" : "AExceptionPrinter.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

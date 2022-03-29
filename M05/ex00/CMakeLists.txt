@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 PROJECT(cpp05_ex00)
 SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
-ADD_EXECUTABLE(main main.cpp Bureaucrat.cpp Bureaucrat.hpp GradeTooHighException.cpp GradeTooHighException.hpp GradeTooLowException.cpp GradeTooLowException.hpp ExceptionPrinter.cpp ExceptionPrinter.hpp)
+ADD_EXECUTABLE(main main.cpp Bureaucrat.cpp Bureaucrat.hpp GradeTooHighException.cpp GradeTooHighException.hpp GradeTooLowException.cpp GradeTooLowException.hpp AExceptionPrinter.cpp AExceptionPrinter.hpp)
 target_compile_options(main
         PUBLIC
         -g

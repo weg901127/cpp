@@ -3,14 +3,12 @@
 //
 
 #include "Bureaucrat.hpp"
-#include "GradeTooLowException.hpp"
-#include "GradeTooHighException.hpp"
 
 Bureaucrat::Bureaucrat() : grade(150/2) {}
 
 Bureaucrat::Bureaucrat(const std::string &name) : name(name), grade(150/2) {}
 
-Bureaucrat::~Bureaucrat() {}
+Bureaucrat::~Bureaucrat() throw(){}
 
 Bureaucrat::Bureaucrat(Bureaucrat &src) {
 	*this = src;
@@ -25,7 +23,7 @@ Bureaucrat &Bureaucrat::operator=(Bureaucrat &src) {
 
 void Bureaucrat::increase() {
 	try {
-		if (grade - 1 < HIGH) throw GradeTooHighException();
+		if (grade - 1 < HIGH) throw Bureaucrat::GradeTooHighException();
 		else
 			--grade;
 	} catch (std::exception& e){
@@ -35,7 +33,7 @@ void Bureaucrat::increase() {
 
 void Bureaucrat::decrease() {
 	try {
-		if (grade + 1 > LOW) throw GradeTooLowException();
+		if (grade + 1 > LOW) throw Bureaucrat::GradeTooLowException();
 		else
 			++grade;
 	} catch (std::exception& e){

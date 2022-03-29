@@ -7,11 +7,13 @@
 
 
 #include <exception>
-#include "ExceptionPrinter.hpp"
+#include "AExceptionPrinter.hpp"
 
-class GradeTooLowException : public std::exception, public ExceptionPrinter{
+class GradeTooLowException : public std::exception, public AExceptionPrinter{
+private:
+	void empty(){};
 public:
-	const char *what() const _NOEXCEPT;
+	const char *what() const throw();
 };
 
 
