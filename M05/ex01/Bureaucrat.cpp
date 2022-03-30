@@ -61,6 +61,15 @@ Bureaucrat::Bureaucrat(const std::string &name, int grade) : name(name){
 	this->grade = grade;
 }
 
+void Bureaucrat::signForm(Form &src) {
+	try {
+		src.beSigned(*this);
+		std::cout << this->name + " signed " + src.getName() << std::endl;
+	} catch (std::exception& e){
+		std::cout << this->name + " couldn't sign " + src.getName() + " because " + e.what() << std::endl;
+	}
+}
+
 
 const char *Bureaucrat::GradeTooHighException::what() const throw() {
     return "Bureaucrat::GradeTooHighException";
