@@ -6,11 +6,9 @@
 #define CPP04_EX03_BUREAUCRAT_HPP
 
 #include <iostream>
-#include "GradeTooHighException.hpp"
-#include "GradeTooLowException.hpp"
 #define HIGH    1
 #define LOW     150
-class Bureaucrat : public GradeTooHighException, public GradeTooLowException{
+class Bureaucrat {
 private:
     std::string const   name;
     int                 grade;
@@ -24,6 +22,15 @@ public:
     int                 getGrade() const;
     void                increase();
 	void                decrease();
+    class GradeTooHighException : public std::exception{
+    public:
+        const char *what() const throw();
+    };
+    class GradeTooLowException : public std::exception{
+    public:
+        const char *what() const throw();
+    };
 };
 
+std::ostream&	operator<<(std::ostream& out, const std::exception& src);
 #endif //CPP04_EX03_BUREAUCRAT_HPP
