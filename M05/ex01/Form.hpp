@@ -26,7 +26,7 @@ public:
 
 	const std::string &getName() const;
 
-	bool beSigned(Bureaucrat& src);
+	void beSigned(Bureaucrat& src);
 
 	bool getIsSigned() const;
 

@@ -1,0 +1,14 @@
+//
+// Created by Giyoung Lee on 3/30/22.
+//
+
+#ifndef CPP05_EX02_PRESIDENTIALPARDONFORM_HPP
+#define CPP05_EX02_PRESIDENTIALPARDONFORM_HPP
+
+
+class PresidentialPardonForm {
+
+};
+
+
+#endif //CPP05_EX02_PRESIDENTIALPARDONFORM_HPP
