@@ -1,4 +1,0 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/F989A6E4-C0EF-45F0-926E-154496AFD54F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/zz/zyxvpxvq6csfxvn_n000cfzc0033qv/T/AppTranslocation/F989A6E4-C0EF-45F0-926E-154496AFD54F/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/gilee/project/cpp/M02/ex00
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/gilee/project/cpp/M02/ex00/cmake-build-debug

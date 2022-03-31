@@ -5,7 +5,7 @@
 #include "Form.hpp"
 int main(){
 	Form a("cpp-module-05",1,100);
-	Bureaucrat c("jseo", 1);
+	Bureaucrat c("gilee2", 1);
 	std::cout << c << std::endl;
 	Bureaucrat b("gilee",0);
 	std::cout << b << std::endl;

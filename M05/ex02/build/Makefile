@@ -57,10 +57,10 @@ RM = /Users/gilee/brew/Cellar/cmake/3.22.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gilee/project/cpp/M05/ex01
+CMAKE_SOURCE_DIR = /Users/gilee/project/cpp/M05/ex02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gilee/project/cpp/M05/ex01/build
+CMAKE_BINARY_DIR = /Users/gilee/project/cpp/M05/ex02/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M05/ex01/build/CMakeFiles /Users/gilee/project/cpp/M05/ex01/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M05/ex02/build/CMakeFiles /Users/gilee/project/cpp/M05/ex02/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M05/ex01/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gilee/project/cpp/M05/ex02/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,78 @@ Form.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Form.cpp.s
 .PHONY : Form.cpp.s
 
+PresidentialPardonForm.o: PresidentialPardonForm.cpp.o
+.PHONY : PresidentialPardonForm.o
+
+# target to build an object file
+PresidentialPardonForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PresidentialPardonForm.cpp.o
+.PHONY : PresidentialPardonForm.cpp.o
+
+PresidentialPardonForm.i: PresidentialPardonForm.cpp.i
+.PHONY : PresidentialPardonForm.i
+
+# target to preprocess a source file
+PresidentialPardonForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PresidentialPardonForm.cpp.i
+.PHONY : PresidentialPardonForm.cpp.i
+
+PresidentialPardonForm.s: PresidentialPardonForm.cpp.s
+.PHONY : PresidentialPardonForm.s
+
+# target to generate assembly for a file
+PresidentialPardonForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PresidentialPardonForm.cpp.s
+.PHONY : PresidentialPardonForm.cpp.s
+
+RobotomyRequestForm.o: RobotomyRequestForm.cpp.o
+.PHONY : RobotomyRequestForm.o
+
+# target to build an object file
+RobotomyRequestForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/RobotomyRequestForm.cpp.o
+.PHONY : RobotomyRequestForm.cpp.o
+
+RobotomyRequestForm.i: RobotomyRequestForm.cpp.i
+.PHONY : RobotomyRequestForm.i
+
+# target to preprocess a source file
+RobotomyRequestForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/RobotomyRequestForm.cpp.i
+.PHONY : RobotomyRequestForm.cpp.i
+
+RobotomyRequestForm.s: RobotomyRequestForm.cpp.s
+.PHONY : RobotomyRequestForm.s
+
+# target to generate assembly for a file
+RobotomyRequestForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/RobotomyRequestForm.cpp.s
+.PHONY : RobotomyRequestForm.cpp.s
+
+ShrubberyCreationForm.o: ShrubberyCreationForm.cpp.o
+.PHONY : ShrubberyCreationForm.o
+
+# target to build an object file
+ShrubberyCreationForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ShrubberyCreationForm.cpp.o
+.PHONY : ShrubberyCreationForm.cpp.o
+
+ShrubberyCreationForm.i: ShrubberyCreationForm.cpp.i
+.PHONY : ShrubberyCreationForm.i
+
+# target to preprocess a source file
+ShrubberyCreationForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ShrubberyCreationForm.cpp.i
+.PHONY : ShrubberyCreationForm.cpp.i
+
+ShrubberyCreationForm.s: ShrubberyCreationForm.cpp.s
+.PHONY : ShrubberyCreationForm.s
+
+# target to generate assembly for a file
+ShrubberyCreationForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ShrubberyCreationForm.cpp.s
+.PHONY : ShrubberyCreationForm.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +288,15 @@ help:
 	@echo "... Form.o"
 	@echo "... Form.i"
 	@echo "... Form.s"
+	@echo "... PresidentialPardonForm.o"
+	@echo "... PresidentialPardonForm.i"
+	@echo "... PresidentialPardonForm.s"
+	@echo "... RobotomyRequestForm.o"
+	@echo "... RobotomyRequestForm.i"
+	@echo "... RobotomyRequestForm.s"
+	@echo "... ShrubberyCreationForm.o"
+	@echo "... ShrubberyCreationForm.i"
+	@echo "... ShrubberyCreationForm.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

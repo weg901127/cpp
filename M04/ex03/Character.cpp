@@ -42,4 +42,17 @@ void Character::use(int idx, ICharacter &target) {
         inventory[idx]->use(target);
 }
 
+Character::Character(Character &src) {
+	*this = src;
+}
+
+Character &Character::operator=(Character &src) {
+	std::string& nameR = const_cast<std::string&>(name);
+	nameR = src.name;
+	for (int i = 0; i < MAX_IVT; i++) {
+		inventory[i] = src.inventory[i];
+	}
+	return *this;
+}
+
 

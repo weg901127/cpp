@@ -26,7 +26,7 @@ protected:
 	void    setExecuteGrade(int const executeGrade);
 public:
 	Form();
-	~Form();
+	virtual ~Form();
 	Form(Form &src);
 	Form(const std::string &name, const std::string &target, const int signGrade, const int executeGrade);
 	Form &operator=(Form &src);

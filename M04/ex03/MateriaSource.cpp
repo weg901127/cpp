@@ -35,6 +35,9 @@ MateriaSource::MateriaSource(MateriaSource &src) {
 }
 
 MateriaSource &MateriaSource::operator=(MateriaSource &src) {
-    (void)src;
+	cur = src.cur;
+	for (int i = 0; i < SLOT_MAX; i++) {
+		slot[i] = src.slot[i];
+	}
     return  *this;
 }
