@@ -15,4 +15,3 @@ int main( void ){
 	std::cout << "REF_VALUE : " << stringREF << std::endl;
     return 0;
 }
-//TODO 평가준비~
