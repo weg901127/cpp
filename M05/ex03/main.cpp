@@ -54,12 +54,9 @@ int main(){
 		std::cout << "========================================FormBlank" << std::endl;
 		Intern someRandomIntern;
 		Form *rrf;
-		try {
-			rrf = someRandomIntern.makeForm("", "Bender");
-		}catch (std::exception& e){
-			std::cout << "explicit Error" << std::endl;
-			goto err;
-		}
+		rrf = someRandomIntern.makeForm("", "Bender");
+		if (rrf == NULL)
+			return 1;
 		Bureaucrat c("gilee2", 100);
 		std::cout << c << std::endl;
 		Bureaucrat b("gilee", 3);
@@ -70,27 +67,5 @@ int main(){
 		c.executeForm(*rrf);
 		delete rrf;
 	}
-	err:
-	{
-		std::cout << "========================================BlankBoth" << std::endl;
-		Intern someRandomIntern;
-		Form *rrf;
-		try {
-			rrf = someRandomIntern.makeForm("", "");
-		}catch (std::exception& e){
-			std::cout << "explicit Error" << std::endl;
-			goto err2;
-		}
-		Bureaucrat c("gilee2", 100);
-		std::cout << c << std::endl;
-		Bureaucrat b("gilee", 3);
-		std::cout << b << std::endl;
-		b.signForm(*rrf);
-		b.executeForm(*rrf);
-		c.signForm(*rrf);
-		c.executeForm(*rrf);
-		delete rrf;
-	}
-	err2:
 	return 0;
 }

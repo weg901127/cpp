@@ -39,15 +39,23 @@ Form *Intern::makeForm(const std::string &formName, const std::string &target) {
 			break;
 		i++;
 	}
-	if (i == 3)
-		throw std::exception();
-	switch (i) {
-		case 0:
-			return new PresidentialPardonForm(target);
-		case 1:
-			return new RobotomyRequestForm(target);
-		case 2:
-			return new ShrubberyCreationForm(target);
+	try {
+		switch (i) {
+			case 0:
+				return new PresidentialPardonForm(target);
+			case 1:
+				return new RobotomyRequestForm(target);
+			case 2:
+				return new ShrubberyCreationForm(target);
+			default:
+				throw Intern::InvalidFormException();
+		}
+	} catch (std::exception& e){
+		std::cout << e.what() << std::endl;
 	}
 	return NULL;
+}
+
+const char *Intern::InvalidFormException::what() const throw() {
+	return "Intern::InvalidFormException";
 }
