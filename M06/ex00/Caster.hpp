@@ -10,19 +10,21 @@
 class Caster {
 private:
 	std::string argv;
+protected:
+	virtual void cast(std::string src) = 0;
+	void setArgv(const std::string &argv);
+	class ImpossibleException : public std::exception {
+	public:
+		virtual const char *what() const throw();
+	};
+	virtual bool isNan(std::string const& src);
 public:
 	Caster();
-	~Caster();
+	virtual ~Caster();
 	Caster(Caster& src);
 	Caster(char *src);
 	Caster& operator=(Caster& src);
-
-	int     toInt() const;
-	char    toChar() const;
-	float   toFloat() const;
-	double  toDouble() const;
+	const std::string &getArgv() const;
 };
-
-
 std::ostream &operator<<(std::ostream &os, const Caster &caster);
 #endif //CPP05_EX00_CASTER_HPP

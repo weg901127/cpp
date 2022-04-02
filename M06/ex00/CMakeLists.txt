@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 PROJECT(cpp05_ex00)
 SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
-ADD_EXECUTABLE(main main.cpp Caster.cpp Caster.hpp)
+ADD_EXECUTABLE(main main.cpp Caster.cpp Caster.hpp Int.cpp Int.hpp Char.cpp Char.hpp Double.cpp Double.hpp)
 target_compile_options(main
         PUBLIC
         -g

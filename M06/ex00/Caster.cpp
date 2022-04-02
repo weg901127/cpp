@@ -6,9 +6,7 @@
 
 Caster::Caster() : argv(""){}
 
-Caster::~Caster() {
-
-}
+Caster::~Caster() {}
 
 Caster::Caster(Caster &src) {
 	*this = src;
@@ -21,29 +19,25 @@ Caster &Caster::operator=(Caster &src) {
 
 Caster::Caster(char *src) {
 	argv = src;
-	std::cout << argv << std::endl;
 }
 
-int Caster::toInt() const{
-	return 0;
+const std::string &Caster::getArgv() const {
+	return argv;
 }
 
-char Caster::toChar() const{
-	return 0;
+void Caster::setArgv(const std::string &src) {
+	Caster::argv = src;
 }
 
-float Caster::toFloat() const{
-	return 0;
+bool Caster::isNan(const std::string &src) {
+	return (src == "nan" || src == "nanf");
 }
 
-double Caster::toDouble() const{
-	return 0;
+const char *Caster::ImpossibleException::what() const throw() {
+	return "impossible";
 }
 
 std::ostream &operator<<(std::ostream &os, const Caster &caster) {
-	std::cout << "char: " << caster.toChar() << '\n';
-	std::cout << "int: " << caster.toInt() << '\n';
-	std::cout << "float: " << caster.toFloat() << '\n';
-	std::cout << "double: " << caster.toDouble() << '\n';
+	std::cout << caster.getArgv();
 	return os;
 }
