@@ -18,6 +18,9 @@ protected:
 		virtual const char *what() const throw();
 	};
 	virtual bool isNan(std::string const& src);
+    virtual bool invaliddot(std::string src);
+    virtual std::string removef(std::string src);
+    virtual bool isnum(std::string src);
 public:
 	Caster();
 	virtual ~Caster();

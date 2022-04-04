@@ -24,30 +24,18 @@ Int &Int::operator=(Int &src) {
 	integer = src.integer;
 	return *this;
 }
-static bool invaliddot(std::string src) {
-	int cntdot = 0;
-	for (size_t i = 0; i < src.length();) {
-		if (src[i] == '.')
-			cntdot++;
-		i++;
-	}
-	return !(cntdot == 1 || cntdot == 0);
-}
-static std::string removef(std::string src) {
-	if (src.find("f") == src.length() - 1)
-		src.erase(src.begin() + src.find("f"));
-	return src;
-}
+
 void Int::cast(std::string src) {
 	double d;
-	std::stringstream c(removef(src));
+    std::string tmp = removef(src);
+	std::stringstream c(tmp);
 	c >> d;
 	integer = d;
 	try {
-		if ((integer == 0 && invaliddot(src))
-		|| (integer == 0 && src.length() > 1 && ((std::to_string(integer) != src) || (std::to_string(integer) + "f" != src)))
-		|| (integer == INT_MAX && (std::to_string(integer) != src))
-		|| (integer == INT_MIN && (std::to_string(integer) != src)))
+		if ((integer == 0 && invaliddot(tmp))
+		|| (!isnum(tmp))
+		|| (integer == INT_MAX && (std::to_string(integer) != tmp))
+		|| (integer == INT_MIN && (std::to_string(integer) != tmp)))
 			throw ImpossibleException();
 		if (src.length() == 1 && isalpha(src[0]))
 			setArgv(std::to_string((int)src[0]));

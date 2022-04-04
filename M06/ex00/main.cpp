@@ -3,6 +3,8 @@
 //
 #include "Char.hpp"
 #include "Int.hpp"
+#include "Double.hpp"
+
 static void printer(Caster* src)
 {
 	std::cout << *src << std::endl;
@@ -21,6 +23,6 @@ int main(int argc, char** argv){
 	std::cout << "float: ";
 	printer(new Int(argv[1]));
 	std::cout << "double: ";
-	printer(new Int(argv[1]));
+	printer(new Double(argv[1]));
 	return 0;
 }
