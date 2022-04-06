@@ -2,30 +2,115 @@
 // Created by Giyoung Lee on 3/28/22.
 //
 #include <iostream>
-
-typedef struct data {
-    unsigned char  x;
-    unsigned char  y;
-    unsigned char  z;
-}Data;
-
-static std::uintptr_t serialize(Data* ptr) {
-  return (*reinterpret_cast<std::uintptr_t*>(ptr));
-};
-
-static Data* desirialize(uintptr_t raw) {
-    std::uintptr_t * tmp = &raw;
-    return (reinterpret_cast<Data*>(tmp));
-};
+#include "template.hpp"
 
 int main(){
-    Data *k = new Data();
-    k->x = 12;
-    k->y = 13;
-    k->z = 14;
-    uintptr_t so = serialize(k);
-    std::cout << (int)desirialize(so)->x << std::endl;
-    std::cout << (int)desirialize(so)->y << std::endl;
-    std::cout << (int)desirialize(so)->z << std::endl;
+	{
+		std::cout << "swap test 1 ======================================" << std::endl;
+		int a = 3;
+		int b = 4;
+		int *c = &a;
+		int *d = &b;
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		swap(a, b);
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+		swap(c, d);
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+	}
+	{
+		std::cout << "swap test 2 ======================================" << std::endl;
+		float a = 3.29f;
+		float b = 4.29f;
+		float *c = &a;
+		float *d = &b;
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		swap(a, b);
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+		swap(c, d);
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+	}
+	{
+		std::cout << "swap test 3 ======================================" << std::endl;
+		double a = 3.19;
+		double b = 4.19;
+		double *c = &a;
+		double *d = &b;
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		swap(a, b);
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+		swap(c, d);
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+	}
+	{
+		std::cout << "swap test 4 ======================================" << std::endl;
+		std::string a = "a";
+		std::string b = "b";
+		std::string &c = a;
+		std::string &d = b;
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		swap(a, b);
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		std::cout << "c : " << c << ", d : " << d << std::endl;
+		swap(c, d);
+		std::cout << "c : " << c << ", d : " << d << std::endl;
+	}
+	{
+		std::cout << "swap test 5 ======================================" << std::endl;
+		char a = 'a';
+		char b = 'b';
+		char *c = &a;
+		char *d = &b;
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		swap(a, b);
+		std::cout << "a : " << a << ", b : " << b << std::endl;
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+		swap(c, d);
+		std::cout << "c : " << *c << ", d : " << *d << std::endl;
+	}
+	{
+		std::cout << "min max test 1 ======================================" << std::endl;
+		int a = 3;
+		int b = 4;
+		std::cout << "min(3, 4) : " << min(a, b) << ", max(3, 4) : " << max(a, b) << std::endl;
+	}
+	{
+		std::cout << "min max test 2 ======================================" << std::endl;
+		float a = 3.14f;
+		float b = 4.14f;
+		std::cout << "min(3.14f, 4.14f) : " << min(a, b) << ", max(3.14f, 4.14f) : " << max(a, b) << std::endl;
+	}
+	{
+		std::cout << "min max test 3 ======================================" << std::endl;
+		double a = 3.19;
+		double b = 4.19;
+		std::cout << "min(3.19, 4.19) : " << min(a, b) << ", max(3.19, 4.19) : " << max(a, b) << std::endl;
+	}
+	{
+		std::cout << "min max test 4 ======================================" << std::endl;
+		std::string a = "Hello";
+		std::string b = "World";
+		std::cout << "min(\"a\", \"b\") : " << min(a, b) << ", max(\"a\", \"b\") : " << max(a, b) << std::endl;
+	}
+	{
+		std::cout << "min max test 5 ======================================" << std::endl;
+		char a = 'H';
+		char b = 'W';
+		std::cout << "min(\"a\", \"b\") : " << min(a, b) << ", max(\"a\", \"b\") : " << max(a, b) << std::endl;
+	}
+		int a = 2;
+		int b = 3;
+		::swap( a, b );
+		std::cout << "a = " << a << ", b = " << b << std::endl;
+		std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
+		std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+		std::string c = "chaine1";
+		std::string d = "chaine2";
+		::swap(c, d);
+		std::cout << "c = " << c << ", d = " << d << std::endl;
+		std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
+		std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
 	return 0;
 }

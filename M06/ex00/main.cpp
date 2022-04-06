@@ -4,7 +4,6 @@
 #include "Caster.hpp"
 
 int main(int argc, char** argv){
-	(void)argv;
 	if (argc > 2 || argc == 1) {
 		std::cout << "Error" << std::endl;
 		return 1;
