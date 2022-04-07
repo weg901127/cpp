@@ -25,10 +25,6 @@ static void    identify(Base* p) {
 	A *a = dynamic_cast<A*>(p);
 	B *b = dynamic_cast<B*>(p);
 	C *c = dynamic_cast<C*>(p);
-	std::cout << p << std::endl;
-	std::cout << a << std::endl;
-	std::cout << b << std::endl;
-	std::cout << c << std::endl;
 	if (a != NULL) {
 		std::cout << "A" << std::endl;
 	} else if (b != NULL) {

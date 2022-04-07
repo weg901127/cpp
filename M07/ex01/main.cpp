@@ -19,7 +19,7 @@ int main(){
 		iter(arr, 3, call);
 	}
 	{
-		std::string arr = "abc";
+		const std::string arr = "abc";
 		iter(arr, 3, call);
 	}
 	{

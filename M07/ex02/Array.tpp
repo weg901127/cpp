@@ -49,13 +49,10 @@ Array<T>::Array(Array &src) {
 
 template<class T>
 T &Array<T>::operator[](unsigned int i) {
-	try {
-		if (i > n || i < 0)
+	//std::cout << i << ":" << (n - 1) << std::endl;
+		if (i > n - 1) {
 			throw std::exception();
-	} catch (std::exception& e) {
-		std::cout << e.what() << std::endl;
-		exit(1);
-	}
+		}
 	return this->arr[i];
 }
 

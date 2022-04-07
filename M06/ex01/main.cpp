@@ -2,12 +2,7 @@
 // Created by Giyoung Lee on 3/28/22.
 //
 #include <iostream>
-
-typedef struct data {
-    unsigned char  x;
-    unsigned char  y;
-    unsigned char  z;
-}Data;
+#include "Data.h"
 
 static std::uintptr_t serialize(Data* ptr) {
   return (*reinterpret_cast<std::uintptr_t*>(ptr));
@@ -27,5 +22,6 @@ int main(){
     std::cout << (int)desirialize(so)->x << std::endl;
     std::cout << (int)desirialize(so)->y << std::endl;
     std::cout << (int)desirialize(so)->z << std::endl;
+	delete k;
 	return 0;
 }
