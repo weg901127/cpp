@@ -5,10 +5,12 @@
 
 int main(){
 	{
-		Array<int> a(10);
-		Array<int> b;
-		b = a;
-		std::cout << b << std::endl;
+		Array<float> *f = new Array<float>(100);
+		for (int i = 0; i < 100; i++) {
+			(*f)[i] = 3;
+		}
+		std::cout << *f << std::endl;
+		delete f;
 	}
 	return 0;
 }

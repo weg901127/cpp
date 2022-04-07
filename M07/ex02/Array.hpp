@@ -10,14 +10,18 @@
 template<class T>
 class Array {
 private:
-	T*  arr;
 	unsigned int n;
+	T*  arr;
 public:
 	Array();
 	~Array();
 	Array(unsigned int n);
 	Array(Array& src);
 	Array& operator=(Array& src);
+	T&  operator[](unsigned int n);
+
+	unsigned int getN() const;
+	T *getArr() const;
 };
 template<class T>
 std::ostream &operator<<(std::ostream &os, const Array<T> &array);
