@@ -23,7 +23,7 @@ Array<T>::~Array<T>() {
 }
 
 template<class T>
-Array<T> &Array<T>::operator=(Array<T> &src) {
+Array<T> &Array<T>::operator=(Array<T> const& src) {
 	n = src.n;
 	if (arr != NULL)
 		delete []arr;
@@ -51,10 +51,17 @@ Array<T>::Array(Array &src) : n(0) , arr(new T[n]()) {
 
 template<class T>
 T &Array<T>::operator[](unsigned int i) {
-	//std::cout << i << ":" << (n - 1) << std::endl;
 		if (i > n - 1) {
 			throw std::exception();
 		}
+	return this->arr[i];
+}
+
+template<class T>
+const T &Array<T>::operator[](unsigned int i) const{
+	if (i > n - 1) {
+		throw std::exception();
+	}
 	return this->arr[i];
 }
 

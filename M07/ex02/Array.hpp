@@ -17,8 +17,9 @@ public:
 	~Array();
 	Array(unsigned int n);
 	Array(Array& src);
-	Array& operator=(Array& src);
+	Array& operator=(Array const& src);
 	T&  operator[](unsigned int n);
+	const T&  operator[](unsigned int n) const;
 
 	unsigned int size() const;
 	T *getArr() const;
