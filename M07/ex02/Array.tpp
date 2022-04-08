@@ -9,10 +9,11 @@
 #include <iostream>
 
 template<class T>
-Array<T>::Array() : n(0), arr(new T[0]){}
+Array<T>::Array() : n(T()), arr(new T[0]()){
+}
 
 template<class T>
-Array<T>::Array(unsigned int n) : n(n), arr(new T[n]){
+Array<T>::Array(unsigned int n) : n(n), arr(new T[n]()){
 	std::cout << *this << std::endl;
 }
 
@@ -24,7 +25,8 @@ Array<T>::~Array<T>() {
 template<class T>
 Array<T> &Array<T>::operator=(Array<T> &src) {
 	n = src.n;
-	delete []arr;
+	if (arr != NULL)
+		delete []arr;
 	arr = new T[n]();
 	for (unsigned int i = 0; i < n; i++) {
 		arr[i] = src.arr[i];
@@ -38,12 +40,12 @@ T *Array<T>::getArr() const {
 }
 
 template<class T>
-unsigned int Array<T>::getN() const {
+unsigned int Array<T>::size() const {
 	return n;
 }
 
 template<class T>
-Array<T>::Array(Array &src) {
+Array<T>::Array(Array &src) : n(0) , arr(new T[n]()) {
 	*this = src;
 }
 
@@ -59,12 +61,12 @@ T &Array<T>::operator[](unsigned int i) {
 template<class T>
 std::ostream &operator<<(std::ostream &os, const Array<T> &array) {
 	std::cout << "index :\t\t";
-	for (unsigned int i = 0; i < array.getN(); i++) {
+	for (unsigned int i = 0; i < array.size(); i++) {
 		std::cout << i << "|\t\t";
 	}
 	std::cout << std::endl;
 	std::cout << "value :\t\t";
-	for (unsigned int i = 0; i < array.getN(); i++) {
+	for (unsigned int i = 0; i < array.size(); i++) {
 		std::cout << array.getArr()[i] << "|\t\t";
 	}
 	return os;

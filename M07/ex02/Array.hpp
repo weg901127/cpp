@@ -20,7 +20,7 @@ public:
 	Array& operator=(Array& src);
 	T&  operator[](unsigned int n);
 
-	unsigned int getN() const;
+	unsigned int size() const;
 	T *getArr() const;
 };
 template<class T>

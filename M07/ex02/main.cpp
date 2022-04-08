@@ -1,45 +1,53 @@
-//
-// Created by Giyoung Lee on 3/28/22.
-//
+#include <iostream>
 #include "Array.tpp"
 
-int main(){
+#define MAX_VAL 750
+int main(int, char**)
+{
+	Array<int> numbers(MAX_VAL);
+	int* mirror = new int[MAX_VAL];
+	srand(time(NULL));
+	for (int i = 0; i < MAX_VAL; i++)
 	{
-		std::cout << "index test 1 =========================" << std::endl;
-		Array<float> *f = new Array<float>(100);
-		try {
-			for (int i = 0; i < 100; i++) {
-				(*f)[i] = 3;
-			}
-			std::cout << *f << std::endl;
-		}catch (std::exception& e) {
-			std::cout << e.what() << std::endl;
-		}
-		delete f;
+		const int value = rand();
+		numbers[i] = value;
+		mirror[i] = value;
 	}
+	//SCOPE
 	{
-		std::cout << "index test 2 =========================" << std::endl;
-		Array<float> *f = new Array<float>(100);
-		try {
-			for (int i = 0; i < 101; i++) {
-				(*f)[i] = 3;
-			}
-			std::cout << *f << std::endl;
-		}catch (std::exception& e) {
-			std::cout << e.what() << std::endl;
-		}
-		delete f;
+		Array<int> tmp = numbers;
+		Array<int> test(tmp);
 	}
+
+	for (int i = 0; i < MAX_VAL; i++)
 	{
-		std::cout << "index test 3 =========================" << std::endl;
-		Array<float> *f = new Array<float>(100);
-		try {
-				(*f)[-100] = -3;
-			std::cout << *f << std::endl;
-		}catch (std::exception& e) {
-			std::cout << e.what() << std::endl;
+		if (mirror[i] != numbers[i])
+		{
+			std::cerr << "didn't save the same value!!" << std::endl;
+			return 1;
 		}
-		delete f;
 	}
+	try
+	{
+		numbers[-2] = 0;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+	try
+	{
+		numbers[MAX_VAL] = 0;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+
+	for (int i = 0; i < MAX_VAL; i++)
+	{
+		numbers[i] = rand();
+	}
+	delete [] mirror;//
 	return 0;
 }
