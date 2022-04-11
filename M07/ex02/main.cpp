@@ -5,6 +5,12 @@
 int main(int, char**)
 {
 	Array<int> numbers(MAX_VAL);
+	Array<int> const& _numbers = numbers;
+	//_numbers[0] = 1;
+	for (unsigned int i = 0; i < _numbers.size(); i++) {
+		std::cout << _numbers[i] << " ";
+	}
+	std::cout << std::endl;
 	int* mirror = new int[MAX_VAL];
 	srand(time(NULL));
 	for (int i = 0; i < MAX_VAL; i++)

@@ -1,3 +1,0 @@
-/Users/gilee/project/cpp/M08/ex00/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/gilee/project/cpp/M08/ex00/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/gilee/project/cpp/M08/ex00/cmake-build-debug/CMakeFiles/main.dir
