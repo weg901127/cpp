@@ -1,17 +1,34 @@
 #include "Span.hpp"
-#include <stdlib.h>
-#include <time.h>
 #include <iostream>
-
 int main() {
-	std::srand(time(NULL));
-	Span a(100);
-	for (size_t i = 0; i < a.maxSize() / 2; i++) {
-		a[i] = rand();
+	{
+		std::srand(time(NULL));
+		Span a(1000);
+		a.complete();
+		std::cout << a << std::endl;
+		Span b(3);
+		b.addNumber(1);
+		b.addNumber(1);
+		b.addNumber(-1);
+		std::cout << b << std::endl;
 	}
-	std::cout << a << std::endl;
-	Span b;
-	b = a;
-	std::cout << b << std::endl;
+	{
+		Span sp = Span(5);
+
+		sp.complete();
+		std::cout << sp.shortestSpan() << std::endl;
+		std::cout << sp.longestSpan() << std::endl;
+	}
+	{
+		Span sp = Span(5);
+
+		sp.addNumber(6);
+		sp.addNumber(3);
+		sp.addNumber(17);
+		sp.addNumber(9);
+		sp.addNumber(11);
+		std::cout << sp.shortestSpan() << std::endl;
+		std::cout << sp.longestSpan() << std::endl;
+	}
 	return 0;
 }
