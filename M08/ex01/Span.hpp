@@ -11,6 +11,7 @@
 typedef struct SpanInfo_ {
 	int LONG_SPAN;
 	int SHORT_SPAN;
+    int          sign[2];
 }SpanInfo;
 
 class Span {
