@@ -6,11 +6,19 @@
 #define CPP08_EX00_EASYFIND_HPP
 
 #include <iostream>
-template<typename T1>
-int& easyfind(T1& a, int b){
-    for (T1::iterator first a.begin(); T1::iterator first a.begin() < ; ++T1::iterator first a.begin()) {
-        
-    }
+#include <typeinfo>
+template<typename T1, typename T2 >
+T2& easyfind(T1& a, T2 b){
+	if (std::string(typeid(*a.begin()).name()) != "i")
+		throw std::exception();
+	return std::find(a.begin(), a.end(), b) == a.end() ? throw std::exception() : *std::find(a.begin(), a.end(), b);
+}
+
+template<typename T1, typename T2>
+const T2& easyfind(T1 const& a, T2 b){
+	if (std::string(typeid(*a.begin()).name()) != "i")
+		throw std::exception();
+	return std::find(a.begin(), a.end(), b) == a.end() ? throw std::exception() : *std::find(a.begin(), a.end(), b);
 }
 /*
 template<typename T1>

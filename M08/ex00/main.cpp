@@ -37,5 +37,13 @@ int main() {
 			std::cout << e.what() << std::endl;
 		}
 	}
+	{
+		try {
+			std::vector<float> v2(30);
+			easyfind(v2, 1.1f);
+		} catch (std::exception& e) {
+			std::cerr << e.what() << std::endl;
+		}
+	}
 return 0;
 }
